@@ -1,0 +1,22 @@
+{
+    "visualName": "columnWithPieChart",
+    "displayName": "columnWithPieChart",
+    "groupId": "visual.sandbox.columnWithPieChart",
+    "packageId": "columnWithPieChart",
+    "author": "Chua Tiong Jiang",
+    "version": "1.0.0",
+    "scripts": [
+        "core.js",
+        "charts.js",
+        "animated.js",
+        "columnWithPieChart.js"
+    ],
+    "styles": [
+        "columnWithPieChart.css"
+    ],
+    "canConfigure3D": false,
+    "canConfigureLegend": false,
+    "canConfigureAnimation": false,
+    "canConfigureColor": true,
+    "canConfigureThreshold": false
+}

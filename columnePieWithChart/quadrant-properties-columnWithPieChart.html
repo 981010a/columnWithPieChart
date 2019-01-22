@@ -1,0 +1,105 @@
+<div class="quadrant-properties">
+    <div class="quadrant-properties__databind">
+
+        <!-- uncomment this to activate top bottom filtering -->
+        <quadrant-control params="
+            controlType: 'topBottom', 
+            quadrantComposer: quadrantComposer, 
+            selectedConnectionSource: selectedConnectionSource, 
+        "></quadrant-control>
+
+
+        <!--Uncomment this to activate connection source component-->
+        <quadrant-control params=" controlType: 'connectionSource',  quadrantViewModel: quadrantViewModel, "></quadrant-control>
+
+        <quadrant-control params="controlType: 'singleBinding',
+                                    labelKey: 'qpCategoryAxis',
+                                    addLabelKey: 'qpAddCategoryAxis',
+                                    bindingType: 'dimension',
+                                    selectedConnectionSource : selectedConnectionSource,
+                                    excludedBindings: excludedDimensionBindings,
+                                    selectedBindingContext: categoryPathBindingContext,
+                                    addBinding : addCategoryPath,
+                                    deleteBinding: deleteCategoryPath,
+                                    updateBinding: updateCategoryPath">
+        </quadrant-control>
+
+        <quadrant-control params="controlType: 'singleBinding',
+                                    labelKey: 'CategoryPie',
+                                    addLabelKey: 'AddCategoryPie',
+                                    bindingType: 'dimension',
+                                    selectedConnectionSource : selectedConnectionSource,
+                                    excludedBindings: excludedDimensionBindings,
+                                    selectedBindingContext: categoryPiePathBindingContext,
+                                    addBinding : addCategoryPiePath,
+                                    deleteBinding: deleteCategoryPiePath,
+                                    updateBinding: updateCategoryPiePath">
+        </quadrant-control>
+
+        <quadrant-control params="controlType: 'singleBinding',
+                                    labelKey: 'qpValueAxis',
+                                    addLabelKey: 'qpAddValueAxis',
+                                    bindingType: 'measurement',
+                                    selectedConnectionSource : selectedConnectionSource,
+                                    excludedBindings: excludedMeasurementBindings,
+                                    selectedBindingContext: valuePathBindingContext,
+                                    addBinding : addValuePath,
+                                    deleteBinding: deleteValuePath,
+                                    updateBinding: updateValuePath">
+        </quadrant-control>
+
+        <!--Separator-->
+        <hr class="quadrant-properties__seperator">
+
+
+        <!--Normal Text box input-->
+        <!--<div class="sandbox__row">
+            <div class="sandbox__label">Normal Text Box Input</div>
+            <div class="text-box text-box--white">
+                <div class="text-box__input">
+                    <input type="text" data-bind="value: normalTextBoxInput">
+                </div>
+            </div>
+        </div>-->
+
+        <!--Simple Select-->
+        <!--<div class="sandbox__row">
+            <div class="sandbox__label">Select</div>
+            <select class="form-control" data-bind="value: selectBinding">
+                <option value="up" selected="">Up</option>
+                <option value="down">Down</option>
+            </select>
+        </div>-->
+
+
+        <!--Simple Switch-->
+        <!--<div>
+            <div class="quadrant-properties__label">This is Switch</div>
+            <div class="quadrant-properties__databind-item">
+                <switch params="value: isSwitchSwitched, isLabelVisible: false ">
+                </switch>
+            </div>
+        </div>-->
+
+
+
+        <!--uncomment this to activate sorting functions-->
+        <!-- <hr class="quadrant-properties__seperator">
+        <quadrant-control params="
+                controlType: 'sorting', 
+                quadrantComposer: quadrantComposer, 
+                selectedConnectionSource: selectedConnectionSource, 
+            "></quadrant-control> -->
+
+        <!-- uncomment this to activate filter functions -->
+        <!-- <hr class="quadrant-properties__seperator">
+        <quadrant-control params="
+            controlType: 'multiCondition', 
+            quadrantComposer: quadrantComposer, 
+            selectedConnectionSource: selectedConnectionSource, 
+        "></quadrant-control> -->
+        <!-- uncomment this to activate cross chart filter -->
+        <!-- <quadrant-control params="controlType: 'filterSubscriber', quadrant: quadrant"></quadrant-control> -->
+
+    </div>
+</div>
